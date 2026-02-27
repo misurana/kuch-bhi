@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>CopyCat AI - Master Anything</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0EA5E9",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+        }
+
+        .dark .hero-gradient {
+            background: radial-gradient(circle at top right, #1e40af 0%, #0f172a 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <nav
+        class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-xl">content_copy</span>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight">CopyCat<span class="text-primary">.ai</span></span>
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="pricing.html"
+                    class="text-sm font-semibold hidden sm:block hover:text-primary transition-colors">Pricing</a>
+                <a href="contact.html"
+                    class="text-sm font-semibold hidden sm:block hover:text-primary transition-colors">Contact</a>
+                <button
+                    class="bg-primary hover:bg-sky-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                    Try Free
+                </button>
+                <button class="p-2 sm:hidden">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-primary/10 dark:bg-primary/20 text-center py-2 px-4">
+        <p class="text-xs sm:text-sm font-medium text-primary-dark flex items-center justify-center gap-2">
+            <span class="bg-primary text-white text-[10px] px-2 py-0.5 rounded-full">NEW</span>
+            Version 2.0 is now live. Explore AI Workflows
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </p>
+    </div>
+    <section class="relative hero-gradient pt-16 pb-24 overflow-hidden border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 bg-slate-800/50 text-slate-300 px-4 py-1.5 rounded-full text-xs font-medium mb-8 border border-slate-700">
+                <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                Trusted by 5,000+ teams worldwide
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                Master Anything with <br class="hidden sm:block" />
+                <span class="text-primary">CopyCat AI</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Clone the workflows of world-class experts. Our AI analyzes expert performances and builds personalized,
+                interactive guides for your team to master any skill instantly.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <button
+                    class="w-full sm:w-auto bg-primary hover:bg-sky-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-primary/25">
+                    Start Free Trial
+                </button>
+                <button
+                    class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    Watch Demo
+                </button>
+            </div>
+            <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative">
+                <img alt="CopyCat Dashboard Preview" class="w-full object-cover aspect-video opacity-80"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4lMBBLMF4RxsYgBKY4KPWJCM47q3pbuqI5W390IbGFqcYzzHBvYE-hudcLByxkS6wNkzhTy9C5HiOovAAth2Cj-Btp1fBU-UZjx6mu7pVk9aQzfe55ZIbG8v9WlRi1AlQTRr7O-0jn9cW0qnYicCWEE2Xrd2JEuVljA6bkEyAt-7ftc_HHTqKBaEqcnuUajU5swsGytU0NKXr12M2yrPYCn5T6FQmAtjDo-otzn68jpuiACdonRhNeGsDjS2cO12Xv5bNh_e7YNU" />
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-left">
+                    <p class="text-white font-bold text-lg">Instant Workflow Capture</p>
+                    <p class="text-slate-300 text-sm">CopyCat AI analyzing a design system in real-time</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+    </section>
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-sm font-bold text-primary uppercase tracking-widest mb-3">Core Capabilities</h2>
+            <h3 class="text-3xl md:text-4xl font-extrabold dark:text-white">Built for High-Growth Teams</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+                class="group p-8 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                <div
+                    class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-primary text-3xl">auto_fix_high</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3 dark:text-white">AI Workflow Cloning</h4>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Automatically capture and structure expert processes into repeatable templates with our advanced AI
+                    engine.
+                </p>
+            </div>
+            <div
+                class="group p-8 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                <div
+                    class="w-14 h-14 bg-sky-100 dark:bg-sky-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-sky-500 text-3xl">format_list_numbered</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3 dark:text-white">Step-by-Step Guides</h4>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Convert complex recordings into easy-to-follow, interactive guides that anyone on your team can
+                    follow.
+                </p>
+            </div>
+            <div
+                class="group p-8 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                <div
+                    class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-blue-500 text-3xl">ios_share</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3 dark:text-white">One-Click Export</h4>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Instantly sync cloned workflows to Notion, Slack, or your favorite project management tool in
+                    seconds.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-slate-500 dark:text-slate-400 font-medium mb-12 uppercase tracking-tighter">
+                Accelerating teams at</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="text-2xl font-black italic dark:text-white">AIRBNB</span>
+                <span class="text-2xl font-bold tracking-tighter dark:text-white">Blue Origin</span>
+                <span class="text-xl font-semibold dark:text-white">NASDAQ</span>
+                <span class="text-2xl font-bold dark:text-white">Rakuten</span>
+                <span class="text-2xl font-serif dark:text-white">TCS</span>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <div class="inline-block px-4 py-1 bg-primary text-white text-[10px] font-bold rounded-full mb-4">COPYCAT
+                EXPERTS</div>
+            <h3 class="text-4xl font-extrabold dark:text-white mb-4">Learn from the Best</h3>
+            <p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">Access a library of cloned workflows from
+                industry-leading architects, designers, and engineers.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert Sarah J." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK311zP-a7k2FWOHSs5HqWUaOxl-0YIjZFevWtW8rcTzZxbLtlVE3YbWO4ZFlXnos88xhnfL4JH3P1Mks0kgYAG7IIQxj2maWJQ8ydai1O1sdZvDjsl0EOa8ng8cjAPgabGmSUES2_MKpY6R41OciKQjTBNtye4aJvLRm2N6OusgASd4Rf2yXrHLquLqscSiBacYlTOrMJW4ZZEy-rlyETUHjd9jmRL3vHlbBO2F2AWKItb7LG1W4Cdh38ziD1giCHir7GpbpFluk" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">Sarah Jenkins</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">UX Architect</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert David L." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBthr9S9l4HQYc5ykomY8NpjyHewwO1AVf43VAgJOcYubnIITJqucRV4EOY7eTbbhT5Y0FHO66-_lfTh-dpHiB8bf2YkucP3sjYov22mjZ1ma2KPB0Y19ImTmJobA63bju4koDQAc2FUa3cHBvCM_10JthhHHRBlUL0VB97VK1uZ87UdQ7hSVVoBZ-ksE2E67IPHq4EKFNxURkL0mIkvkkp2u3YMFFbKly8NDuqq51VjZRqzoZ0XReCDqlzg9CRG5sUC8yaRf1UKH0" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">David Lu</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">DevOps Lead</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert Maria G." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDVbDjqU3Jf7LcPl2F6Ii_Eu5XTgzEBIidzw3Bp4yo7o4drSJ5LDX3CFM67XfQhIVquV9AmS9EilRTVGj2by-dnBcSk4jdWSHddofAzZVys-RfPxIoUoYlFkRVZDv1OmlC1aWz9kR7h7LZ6klYUDnmw2VQlNC3e1P70b7b_S63ksKycoIhJOWZfGzl59xBJ33oS65Cyk3hi8X_HITTE_9I37YncDfadrIc8AarzpuFMmJw66cdu-zURZ38NguXap8AS5pUycfl2J8" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">Maria Garcia</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Growth Hacker</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert Tom R." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx2CmZHnrkxbhEIdZwMO6V6PNUxG9EmzuszTAXpiFDsf-ovYhUnAQzoTy0EBh8JQ6chmgMO46EseTM4Om_MztfIXF9NPUDCsQP01XXGJN4EPwaAur4vssrCBkRX0sqAV6hSQ3Q-ht32JxeB2nVDYGWQ9R7LScSMGt_cg91HPOstN6iO8jpec4RkKSLM7v2SDfy5z-ERM1povBngXbxCPVfTUL95ysjgukWxup_fIvsvPdWwuPaQUBUI7p54hhWZd1GTlrmuRSW3xw" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">Tom Reed</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Product Manager</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert Elena S." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhn8n_13FfA1Kty0pf36ax-x2E-MwWnrv5L2zwPiF4Y73VNirGeFHB8G-EQUJsNaUuWv8uUPpz1126xri9LceJANl0aaL5ZwQruCoRhdHXL1S2spOefJY8ix-Zic0rmcxCk5LOwpG3Hb4LLUQ0QBBgfIVTBlOBuq9cXkttPYJ4klcaSE2WgITcl8UAZKiqJIqm7sWYUkqiwa65SuoiDA-UfLYGv6pZXiE3WTXF-scQGlwM2kbpfdpFkSTrm-GmZEKXnn6sNSDioJM" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">Elena Smith</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">FinTech Guru</p>
+                </div>
+            </div>
+            <div
+                class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <img alt="Expert Marcus K." class="w-full grayscale hover:grayscale-0 transition-all cursor-pointer"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIyikycnGhaQeA87qCj9nA8XklbJvFA2zGWWMkjrdEKVNl7pSgCknIbSxXnHfp1JU_lLASCl-50y1I9piDITqvE0n1l4FpBfHQodsx6sfRLb8riNLA7zWmDFcdU6JSCpXJaq1EP1A54KiNvkYc2W0ODHXUuoMBx_qe_xMNpLgoWlWjVLDN-EtSctbwx36sCAA6PbqCWqK4AbKRcCDiBzDarzqhvKx_Dlb_Gbv9fjZra3MlkoCSn6s0BV9uuWVLtg1TTL8QJmAq2tk" />
+                <div class="p-4">
+                    <p class="font-bold text-sm dark:text-white">Marcus King</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Data Scientist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 px-6">
+        <div
+            class="max-w-5xl mx-auto rounded-[2.5rem] bg-slate-900 dark:bg-primary/10 border border-slate-800 p-12 text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl font-extrabold text-white mb-6">Ready to scale your team's genius?</h2>
+                <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">Start your 14-day free trial today. No credit
+                    card required. Cancel anytime.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button
+                        class="bg-primary hover:bg-sky-500 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all">
+                        Get Started for Free
+                    </button>
+                    <a href="contact.html"
+                        class="text-white font-semibold hover:text-primary transition-colors py-4 px-6 underline decoration-primary underline-offset-4">
+                        Talk to Sales
+                    </a>
+                </div>
+            </div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/20 blur-[80px] rounded-full"></div>
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-sky-600/20 blur-[80px] rounded-full"></div>
+        </div>
+    </section>
+    <footer class="bg-slate-50 dark:bg-slate-950 pt-20 pb-10 border-t border-slate-200 dark:border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-6 h-6 bg-primary rounded flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-[14px]">content_copy</span>
+                        </div>
+                        <span class="text-lg font-extrabold dark:text-white">CopyCat AI</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 max-w-xs leading-relaxed">
+                        Empowering teams to capture, clone, and master the world's most effective workflows through the
+                        power of artificial intelligence.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 dark:text-white">Product</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Expert Library</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 dark:text-white">Resources</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">AI Blog</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Community</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 dark:text-white">Company</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-10 border-t border-slate-200 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 CopyCat AI Technologies Inc. All rights
+                    reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">brand_family</span></a>
+                    <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                            class="material-symbols-outlined">mail</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button
+        class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-white dark:bg-slate-800 shadow-2xl border border-slate-200 dark:border-slate-700 flex items-center justify-center z-[100] transition-transform active:scale-95"
+        onclick="document.documentElement.classList.toggle('dark')">
+        <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+        <span class="material-symbols-outlined hidden dark:block text-yellow-400">light_mode</span>
+    </button>
+
+</body>
+
+</html>
